@@ -48,11 +48,11 @@ switch (app.get('env')) {
     console.log('No logging done by morgan.');
 }
 
-// app.use(webpackDevMiddleware(compiler, {
-//   publicPath: webpackConfig.output.publicPath,
-//   reload: true,
-//   timeout: 2000
-// }));
+app.use(webpackDevMiddleware(compiler, {
+  publicPath: webpackConfig.output.publicPath,
+  reload: true,
+  timeout: 2000
+}));
 
 // SERVE STATIC FILES
 app.use(express.static('dist'));
