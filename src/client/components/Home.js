@@ -1,9 +1,18 @@
 import React from 'react';
+import { Jumbotron, Button } from 'reactstrap';
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <Jumbotron>
+        <h1 className="display-3">Hello, world!</h1>
+        <p className="lead">This is a simple hero unit, used for calling extra attention to featured content or information.</p>
+        <hr className="my-2" />
+        <p>It uses utility classes for typography and spacing.</p>
+        <p className="lead">
+          <Button color="primary">Learn More</Button>
+        </p>
+      </Jumbotron>
     </div>
   );
 }
